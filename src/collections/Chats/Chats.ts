@@ -2,6 +2,7 @@ import { CollectionConfig } from 'payload/types'
 import { ChatFields } from './Chat.fields'
 import { Access, allowAnyUser, allowUserWithRole, filtered, requireOne } from 'payload-rbac'
 import { Chat } from 'payload/generated-types'
+import { ChatController } from './Chat.controller'
 
 const readAccess: Access = requireOne(
   allowUserWithRole('admin'),
@@ -23,6 +24,7 @@ const Chats: CollectionConfig = {
   },
   defaultSort: '-createdAt',
   fields: ChatFields,
+  endpoints: ChatController
 }
 
 export default Chats

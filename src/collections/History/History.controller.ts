@@ -11,8 +11,8 @@ const validateUsage = async (req: any, res: any) => {
     depth: 1
   })
 
-  const currentTotalUsage = user?.Related?.totalUsage || 0
-  const currentMonthlyUsage = user?.Related?.monthlyUsage || 0
+  const currentTotalUsage = user.totalUsage || 0
+  const currentMonthlyUsage = user.monthlyUsage || 0
 
   const subscriptionsSearch = await req.payload.find({
     collection: 'subscriptions',
