@@ -8,24 +8,28 @@ export const InstrumentFields: Field[] = [
     name: 'name',
     label: 'Name',
     required: true,
+    localized: true,
   },
   {
     type: 'text',
     name: 'intro',
     label: 'Intro',
     required: true,
+    localized: true,
   },
   {
     type: 'textarea',
     name: 'description',
     label: 'Description',
     required: true,
+    localized: true,
   },
   {
     type: 'textarea',
     name: 'example',
     label: 'Example',
     required: true,
+    localized: true,
   },
   {
     type: 'textarea',

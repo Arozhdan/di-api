@@ -11,8 +11,8 @@ const Tiers: CollectionConfig = {
     delete: allowUserWithRole('admin'),
   },
   admin: {
-    useAsTitle: 'main.name',
-    defaultColumns: ['main.name', 'main.allowance'],
+    useAsTitle: 'name',
+    defaultColumns: ['name', 'allowance'],
   },
   defaultSort: '-createdAt',
   fields: TiersFields,

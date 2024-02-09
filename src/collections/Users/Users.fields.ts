@@ -18,6 +18,13 @@ const tabs: Tab[] = [
             label: 'Last Name',
             name: 'lastName',
           },
+          {
+            type: 'text',
+            label: 'Username',
+            name: 'username',
+            index: true,
+            unique: true,
+          }
         ]
       },
       {

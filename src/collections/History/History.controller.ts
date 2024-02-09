@@ -36,6 +36,7 @@ const validateUsage = async (req: any, res: any) => {
     id: tierId
   })
 
+
   if (!tier) {
     return {
       currentTotalUsage: null,
@@ -148,7 +149,7 @@ export const historyController: CollectionConfig['endpoints'] = [
           return res.sendStatus(400)
         }
 
-        let prompt = instrument.prompt
+        let prompt = instrument.prompt.replaceAll('[input]', input).replaceAll('[lang]', language).replaceAll('[tov]', tov)
 
         const openai = new OpenAI({
           apiKey: process.env['OPENAI_API_KEY'] || '',

@@ -69,6 +69,7 @@ const Settings: GlobalConfig = {
       type: 'richText',
       name: 'releaseNotes',
       required: true,
+      localized: true,
     },
     {
       type: 'array',

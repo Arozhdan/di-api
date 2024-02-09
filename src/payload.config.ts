@@ -54,4 +54,10 @@ export default buildConfig({
   db: mongooseAdapter({
     url: process.env.DATABASE_URI,
   }),
+
+  localization: {
+    locales: ['en', 'ru'],
+    defaultLocale: 'ru',
+    fallback: true,
+  }
 })
