@@ -34,12 +34,16 @@ export default buildConfig({
     schemaOutputFile: path.resolve(__dirname, 'generated-schema.graphql'),
   },
   cors: [
-    'http://localhost:3000',
+    'http://localhost:3001',
     'http://localhost:5173',
+    'http://manager.sassendigital.com',
+    'http://di.sassendigital.com'
   ],
   csrf: [
-    'http://localhost:3000',
+    'http://localhost:3001',
     'http://localhost:5173',
+    'http://manager.sassendigital.com',
+    'http://di.sassendigital.com'
   ],
   plugins: [
     payloadCloud(),
