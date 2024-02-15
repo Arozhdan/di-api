@@ -48,10 +48,12 @@ export const InstrumentFields: Field[] = [
     name: 'instrumentType',
     label: 'Instrument Type',
     options: [
-      { label: 'Business', value: 'business' },
-      { label: 'Social', value: 'social' },
-      { label: 'Custom', value: 'custom' },
-      { label: 'Other', value: 'other' }
+      { label: 'Simple tools', value: 'simple' },
+      { label: 'Social media', value: 'social' },
+      { label: 'Marketing', value: 'marketing' },
+      { label: 'Branding', value: 'branding' },
+      { label: 'Sales', value: 'sales' },
+      { label: 'Custom', value: 'custom' }
     ],
     defaultValue: 'other',
     admin: {
