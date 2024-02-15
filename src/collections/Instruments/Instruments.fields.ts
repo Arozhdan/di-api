@@ -52,12 +52,15 @@ export const InstrumentFields: Field[] = [
       { label: 'Social media', value: 'social' },
       { label: 'Marketing', value: 'marketing' },
       { label: 'Branding', value: 'branding' },
+      { label: 'Advertising', value: 'advertising' },
+      { label: 'Business', value: 'business' },
       { label: 'Sales', value: 'sales' },
       { label: 'Custom', value: 'custom' }
     ],
     defaultValue: 'other',
     admin: {
       position: 'sidebar',
+      description: 'Привет, Марина!'
     }
   }
 ]
