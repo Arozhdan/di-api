@@ -18,6 +18,12 @@ export const InstrumentFields: Field[] = [
     localized: true,
   },
   {
+    type: 'text',
+    name: 'help',
+    label: 'Help Text',
+    localized: true,
+  },
+  {
     type: 'textarea',
     name: 'description',
     label: 'Description',
