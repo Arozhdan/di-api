@@ -131,6 +131,13 @@ const Settings: GlobalConfig = {
               }
             }
           ]
+        },
+        {
+          type: 'richText',
+          name: 'description',
+          label: 'Description',
+          required: true,
+          localized: true,
         }
       ]
     },

@@ -67,12 +67,6 @@ const tabs: Tab[] = [
           },
           {
             type: 'checkbox',
-            name: 'socialMediaAds',
-            label: 'Receive social media ads?',
-            defaultValue: true,
-          },
-          {
-            type: 'checkbox',
             name: 'securityEmails',
             label: 'Receive security emails?',
             defaultValue: true,
